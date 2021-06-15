@@ -1,22 +1,16 @@
 #  Android Project
+
 My Final Android Project
 ***
-<p>This README file is to for the Android application that was created during my senior capstone while in attendance at the univeristy.
+<p>This README file is to for the Android application that was created during my senior capstone while in attendance at the university. </p>
 
-1. ### Java Basics - 
- * This will contain code for reviewing the basics of the Java Programming Language.
- * Basic items of the language like control structures.
-2. ### Java Classes -
- *  Shows some basic classes it will have some driver files to test them.
-3. ### Simple Java Graphics -
- * **String Cube**  - Draws a simple string Cube
- * **Four Corners**  - Draws curves using lines to approximate the curve
- * **Concentric Circles** - Draws a series of 12 circles from the center of the screen out.
- * **Bulls Eye** -  Draws a simple bullseye using alternate colors.
- * **Square Spiral** - Draws a simple square spiral.
-4. ### Java Swing -  Will have a series of GUIs and associated applications.
-* **Simple GUIs** -  These are simple applications that make use of Swing to allow for user interaction.  They are are not console based.
-4. ### Java Applications -
-5. ### Java Servlets - 
-6. ### Projects -
- * Simple Projects that utilize some of the above concepts.
+1. ### User Guide - 
+* This will contain a guide for the use of the application.  It is used to familiarize the user with the basic functionality of the application
+* All functionality is covered within the guide.
+2. ### Application Maintenance Guide -
+*  It has suggestions on how to maintain the application over the course of it life-cycle.
+*  Suggestions to the customer/owner on what to be on the look out for to make sure that the application has a long and useful life.
+3. ### Project Summary -  
+* Discusses the business problem that was used to create the application, SDLC methodology, deliverables, implementation, sample validation and verification of the application, environments and cost, project timeline,
+5. ### Project Summary Part 2-  
+* Details the design of the application, has the design document, unit test plan, specifications, procedures and the results.
