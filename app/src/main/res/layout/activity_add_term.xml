@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddUpdateTermActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background_color">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorAccent"
+        android:id="@+id/terms_add_tool_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cell_padding"
+        android:text="@string/add_term_instr"
+        android:textStyle="bold"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/add_color"
+        android:columnCount="7"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:rowCount="8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/add_term_title_instr"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size_portrait" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/error_term_edit_title"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_row="1"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/add_term_edit_text"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="3"
+                android:hint="Enter title here."
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/add_term_text_size_portrait" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/start_date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size_portrait" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/error_term_start_date_error"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_row="2"
+            android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/start_date_edit_text"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:textColor="@color/colorPrimary"
+            android:inputType="text|textMultiLine"
+            android:textSize="@dimen/add_term_text_size_portrait"
+            android:hint="@string/add_term_start_date_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/end_date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size_portrait" />
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/error_term_end_date_error"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_row="5"
+            android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/end_date_edit_text"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:hint="@string/add_term_end_date_hint"
+            android:inputType="text|textMultiLine"
+            android:singleLine="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size_portrait" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </GridLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_term_fab"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_save_24"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="bottom|right"
+        app:layout_anchorGravity="bottom|right|end"
+        app:fabSize="mini"/>
+
+
+
+</LinearLayout>

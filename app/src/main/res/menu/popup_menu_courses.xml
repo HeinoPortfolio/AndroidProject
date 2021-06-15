@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/delete_course"
+        android:title="@string/delete_courses_popup_menu" />
+
+    <item
+        android:id="@+id/update_course"
+        android:title="@string/update_courses_popup_menu" />
+
+    <item
+        android:id="@+id/course_details_option"
+        android:title="@string/details_courses_popup_menu"/>
+
+    <item
+        android:id="@+id/course_notification_option"
+        android:title="@string/add_course_notification_popup_menu"/>
+
+</menu>

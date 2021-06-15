@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/term_details_view_course_details"
+        android:title="@string/term_details_view_course_details" />
+
+    <item
+        android:id="@+id/term_details_update_course_details"
+        android:title="@string/term_details_update_course_details" />
+
+    <item
+        android:id="@+id/term_details_delete_course_details"
+        android:title="@string/delete_courses_popup_menu" />
+
+    <item
+        android:id="@+id/term_details_add_course_notification"
+        android:title="@string/term_details_add_course_notification" />
+
+</menu>

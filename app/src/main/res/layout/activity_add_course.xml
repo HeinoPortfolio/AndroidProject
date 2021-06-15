@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background_color"
+    tools:context=".UI.AddCourseActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/course_add_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorAccent" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/cell_padding"
+        android:text="@string/add_course_instr"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/add_color"
+        android:columnCount="8"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:text="@string/course_title"
+            android:padding="@dimen/cell_padding"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size_portrait" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/error_course_edit_title"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_columnSpan="3"
+            android:layout_margin="5dp">
+
+
+            <EditText
+                android:id="@+id/add_course_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnSpan="3"
+                android:hint="Enter course title here."
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/add_term_text_size_portrait" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/start_date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size_portrait" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/error_course_start_date"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_columnSpan="3"
+            android:layout_margin="5dp">
+
+            <EditText
+
+                android:id="@+id/add_course_start_date_edit_text"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnSpan="3"
+                android:hint="@string/add_term_start_date_hint"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/add_term_text_size_portrait" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/end_date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size_portrait" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/error_course_end_date"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_columnSpan="3"
+            android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/add_course_end_date_edit_text"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:hint="@string/add_term_end_date_hint"
+            android:inputType="text"
+            android:textSize="@dimen/add_term_text_size_portrait"
+            android:textColor="@color/colorPrimary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/status_course_add"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size_portrait" />
+
+        <Spinner
+            android:id="@+id/status_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"/>
+            <!-- android:entries="@array/status_array" -->
+
+        <TextView
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/add_course_instructor"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size_portrait" />
+
+        <Spinner
+            android:id="@+id/instructor_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_columnSpan="3"/>
+
+    </GridLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_course_fab"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_save_24"
+        app:fabSize="mini"
+        app:layout_anchorGravity="bottom|right|end" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_course_notification_fab"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_edit_calendar_24"
+        app:fabSize="mini" app:layout_anchorGravity="bottom|right|end" />
+
+
+
+
+
+
+</LinearLayout>

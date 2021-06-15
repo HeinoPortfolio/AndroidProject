@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:padding="@dimen/cell_padding"
+    tools:context=".UI.AddCourseActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/course_add_note_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorAccent" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/add_color"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:paddingTop="15dp"
+            android:text="@string/add_note_Title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/add_term_text_size" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/error_note_edit_title"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_columnSpan="3"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/add_note_title_edit_text"
+                android:layout_width="548dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_columnSpan="3"
+                android:hint="@string/add_note_hint"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/add_term_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </GridLayout>
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="@string/add_note_body"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/add_term_text_size" />
+
+
+    <EditText
+        android:id="@+id/add_note_body_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top|left"
+        android:hint="@string/add_note_body_hint"
+        android:inputType="textMultiLine"
+        android:lines="30"
+        android:maxLines="3"
+        android:minLines="5"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/add_term_text_size" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_note_fab"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_save_24"
+        app:fabSize="mini"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</LinearLayout>

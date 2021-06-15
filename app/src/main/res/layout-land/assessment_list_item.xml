@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/cv_terms"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="12dp"
+    android:padding="15dp"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardCornerRadius="10dp">
+
+    <!--Components -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="201dp"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/assessment_title"
+            style="?android:textAppearanceLarge"
+            android:layout_width="135dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:scrollHorizontally="true"
+            android:text="@string/assessment_title"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/assessment_start_date_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/start_date"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/assessment_title" />
+
+        <TextView
+            android:id="@+id/assessment_start_date_actual"
+            android:layout_width="87dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:text="Start Actual"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toEndOf="@+id/assessment_start_date_textView"
+            app:layout_constraintTop_toBottomOf="@+id/assessment_title" />
+
+        <TextView
+            android:id="@+id/assessment_end_date_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/end_date"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/assessment_start_date_textView" />
+
+        <TextView
+            android:id="@+id/assessment_end_date_actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="End Date Actual"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/assessment_end_date_textView"
+            app:layout_constraintTop_toBottomOf="@+id/assessment_start_date_actual" />
+
+        <TextView
+            android:id="@+id/assessment_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="Assessment Type"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/assessment_end_date_textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+            android:id="@+id/update_delete_assessment_menu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toEndOf="@+id/assessment_type_tv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.896"
+            app:srcCompat="@drawable/ic_more_vert_white_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

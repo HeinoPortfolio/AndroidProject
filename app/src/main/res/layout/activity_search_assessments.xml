@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.SearchAssessmentsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorAccent"
+        android:id="@+id/search_assessments_tool_bar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/add_color"
+        android:padding="5dp">
+
+
+        <Spinner
+            android:id="@+id/search_course_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/search_array_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/search_select_course_assessment_button"
+            android:layout_width="140dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="47dp"
+            android:background="@color/color_button_background"
+            android:text="@string/search_assessment_select_course"
+            android:textColor="@color/color_button_text"
+            app:layout_constraintBottom_toTopOf="@+id/search_monthly_weekly_assessment_list_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toEndOf="@+id/search_course_spinner"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="251dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/search_assessment_select_week_or_month"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_course_spinner"
+            app:layout_constraintVertical_bias="0.113" />
+
+        <RadioGroup
+            android:id="@+id/search_assessments_group"
+            android:layout_width="220dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:title="Choose Weekly or Monthly"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+
+            <RadioButton
+                android:id="@+id/search_assessment_monthly_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/search_assessment_monthly"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.032"
+                app:layout_constraintStart_toEndOf="@+id/search_assessment_weekly_radio"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <RadioButton
+                android:id="@+id/search_assessment_weekly_radio"
+                android:layout_width="116dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="@string/search_assessment_weekly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/search_monthly_weekly_assessment_list_button"
+            android:layout_width="145dp"
+            android:layout_height="36dp"
+            android:layout_margin="5dp"
+            android:layout_marginStart="24dp"
+            android:background="@color/color_button_background"
+            android:text="@string/search_assessment_select_week_or_month"
+            android:textColor="@color/color_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/search_assessments_group"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <Button
+            android:id="@+id/search_reset_assessment_list_button"
+            android:layout_width="111dp"
+            android:layout_height="39dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/color_button_background"
+            android:text="@string/search_note_clear_list"
+            android:textColor="@color/color_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.856"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_assessments_group"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_search_assessments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/assessment_list_item" />
+
+    </ScrollView>
+
+
+
+</LinearLayout>

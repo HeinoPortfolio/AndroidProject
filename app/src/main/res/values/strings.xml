@@ -1,0 +1,285 @@
+<resources>
+    <string name="app_name">My Scheduler</string>
+    <string name="welcome">Welcome to the Scheduler Application</string>
+
+    <!--Navigation strings -->
+    <string name="nav_terms">Terms</string>
+    <string name="nav_courses">Courses</string>
+    <string name="nav_assessments">Assessments</string>
+    <string name="nav_notes">Your course notes</string>
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+    <string name="nav_search_notes">Search Notes</string>
+    <string name="nav_search_assessments">Search Assessments</string>
+    <string name="close_app">Close the app</string>
+    <string name="search_options">Search Options</string>
+
+    <!-- Main Activity -->
+
+    <!-- Toolbar Strings  -->
+    <string name="toolbar">Test</string>
+
+    <!-- Activity Labels -->
+    <string name="term_label">View Available Terms </string>
+    <string name="courses_label">View All Courses</string>
+    <string name="assessment_label">View assessments</string>
+    <string name="add_term_Label">Add a New Term</string>
+    <string name="add_course_label">Add a New Course</string>
+    <string name="course_details_label">Course Details</string>
+    <string name="add_assessment_label">Add an Assessment</string>
+    <string name="add_note_label">Add a Note</string>
+    <string name="search_notes_label">Search Notes</string>
+    <string name="search_assessments_label">Search Assessments</string>
+    <string name="login_label"> Login </string>
+
+    <!-- Login Strings -->
+    <string name="welcome_string">Welcome to the Faber College Student Scheduler</string>
+    <string name="username_hint">Enter Username Here</string>
+    <string name="password_hint">Enter Password Here</string>
+    <string name="clear_button">Clear </string>
+    <string name="login_button"> Login</string>
+    <string name="empty_user_pass">Empty Username or Password</string>
+    <string name="error_user_info">Incorrect Username or Password </string>
+
+    <!--Terms Available Strings-->
+    <string name="term_greeting">On this screen you can view all the terms that are available to you.</string>
+    <string name="term_add">Add term to schedule</string>
+    <string name="term_help">Help with term screen</string>
+    <string name="help_text_terms">On this screen you will be able to create a new
+        term by clicking the plus button icon on the toolbar.  Click on a term to
+        get a detailed view of the term which includes the courses with each term.
+        Clicking the three dots will bring up options that are associated with
+        each term.  You will have three available options 1) Delete the term
+        2) Update the term\'s info. 3) View the term details. This option will
+        bring you to a screen that will ist all the courses that are assigned
+        to that term.
+    </string>
+    <string name="empty_term_notification">The term must be empty in order to delete it.
+        Please select the Term Details option to remove the courses from the term.</string>
+    <string name="term_deleted">Term was deleted!</string>>
+
+    <!--Courses Available -->
+    <string name="course_add">Add a course to the schedule</string>
+    <string name="course_help">Help with course screen.</string>
+    <string name="help_text_courses">  Click on a course\'s three button icon
+        to get the following options: 1) Delete a Course 2) Update the course
+        3) View Course details - get a detailed view of the course which
+        includes the assessments with each course. 4) Add course notification
+    </string>
+    <string name="course_title">Course Title</string>
+    <string name="courses_greeting">On this screen you can view all the courses that are available to you.</string>
+    <string name="course_status">Course Status</string>
+
+    <!-- Assessments Available  -->
+    <string name="assessment_add">Add a course to the schedule</string>
+    <string name="assessment_help">Help with course screen.</string>
+    <string name="assessment_title">Assessment Title</string>
+    <string name="help_text_assessments">On this screen you will be able to
+        create a new assessment by clicking the plus button icon on the toolbar.
+        Click on a assessment\'s three dots to get the following options:
+        1) Delete an assessment 2) Update an assessment 3) Add course notification
+    </string>
+    <string name="assessment_greeting">On this screen you can view all the assessments that are available to you.</string>
+
+    <!-- Terms Card -->
+    <string name="start_date">Start Date:</string>
+    <string name="end_date">End Date:</string>
+
+    <!-- Term Add Update -->
+    <string name="help_text_term_add">On this screen you will be able to create
+        a new term or modify an existing term\'s information.  You will need to
+        fill out the appropriate information. There will be a date picker to
+        simplify adding the start and end date. (Note you may need to tap the
+        text field twice to bring up the date picker.)  To save the new term
+        click the diskette icon.
+    </string>
+    <string name="add_term_instr">Enter the term information below.</string>
+    <string name="add_term_title_instr">Enter term title:</string>
+    <string name="add_term_start_date_hint">Click here to select start date.(You may need to double click)</string>
+    <string name="add_term_end_date_hint">Click here to select end date.(You may need to double click)</string>
+    <string name="edit_term">Edit Term Information</string>
+
+    <!-- Term Details -->
+    <string name="term_details_title"> Term Title: </string>
+    <string name="term_details_start_date">Term Start Date:</string>
+    <string name="term_end_date">Term End Date:</string>
+    <string name="help_text_term_details">On this screen you will be able to
+        view details about the term. You will see the term information as well
+        as the courses that are associated with it. \n To add a course click the plus
+        icon located next to help icon.  Click on the card to see the following
+        options: 1) View course details - will give you information about the selected
+        2) Update the course - update the course information. 3) Add course notification
+    </string>
+    <string name="term_details_view_course_details">View Course Details</string>
+    <string name="term_details_update_course_details">Update a Course</string>
+    <string name="term_details_add_course_notification"> Add Course Notification</string>
+
+    <!-- Course Add -->
+    <string name="add_course_instr">Enter the course information below.</string>
+    <string name="add_course_title_instr">Enter course title:</string>
+    <string name="term_course_add">Term</string>
+    <string name="status_course_add">Status</string>
+    <string name="help_text_course_add">On this screen you will be able to create a new
+        course.  You will need to fill out the appropriate information There will be a
+        date picker to simplify adding the start and end date as well as a spinner for
+        terms and .  To save the new term
+        click the diskette icon. Also, you will be able to add a notification for the course
+        by clicking the calendar icon.
+    </string>
+    <string name="add_course_start_date_hint">Click here to select start date.</string>
+    <string name="add_course_end_date_hint">Click here to select end date.</string>
+    <string-array name="status_array">
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Plan to Take</item>
+    </string-array>
+    <string-array name="instructor_array">
+        <item>Matthew Heino</item>
+        <item>Bill Gates</item>
+        <item>Linus Torvalds</item>
+    </string-array>
+    <string name="add_course_instructor">Instructor:</string>
+    <string name="add_course_title">Add a Course</string>
+    <string name="update_course_title">Update a Course</string>
+
+    <!--Add assessment activity -->
+    <string name="add_assessment_title">Assessment Title</string>
+    <string name="add_assessment__Title_prompt">Enter Assessment Title here.</string>
+    <string name="add_assessment_start_date">Start Date</string>
+    <string name="add_assessment_start_date_hint">Click here to select start date.(You may need to double click)</string>
+    <string name="add_assessment_end_date">End Date</string>
+    <string name="add_assessment_end_date_hint">Click here to select end date.(You may need to double click)</string>
+    <string-array name="type_array">
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+    <string name="add_assessment_type">Type of Assessment:</string>
+    <string name="help_text_add_assessments">On this screen you will be able
+        to create or modify an assessment by clicking the plus button icon on the
+        toolbar.
+    </string>
+    <string name="add_an_assessment">Add An Assessment</string>
+    <string name="update_an_assessment">Update An Assessment</string>
+
+    <!-- Add Note activity-->
+    <string name="add_note_Title">Note Title:</string>
+    <string name="add_note_hint">Enter Note Title here:</string>
+    <string name="add_note_body_hint">Enter Note body here:</string>
+    <string name="add_note_body">Enter Note below:</string>
+    <string name="help_text_add_notes">On this screen you will be able to
+        create a new or modify/update after entering the appropriate
+        information note by clicking the diskette button.
+    </string>
+    <string name="add_note">Add Note Screen</string>
+    <string name="update_note">Update Note Screen</string>
+    <string name="view_note">View notes only</string>
+
+    <!-- Course Details -->
+    <string name="course_details_help">This screen will allow you to view
+        information about the selected course. \n You will be able to add
+        assessments and notes by clicking the menu options - the three dots top
+        right of the screen. The cards in a darker shade of blue will be the
+        assessments.  The cards in the lighter blue will be the notes for the
+        selected course. \n If you choose the three dots on the assessment
+        you will have the following options: 1) Delete the assessment 2) Update
+        the information for the assessment. 3) Add a notification for the assessment.
+        \n If you choose the notes (by selecting the folded page icon) you will
+        be presented with the following options: 1) Delete the note 2) Update
+        the note 3) View note details - choosing this option you will only be
+        able to view the note and note make any changes to the note details.
+        4)  Share note - you will be able to share the note via email or other options.
+    </string>
+    <string name="course_details_title">Course Details</string>
+    <string name="course_details_add_assessment">Add an assessment</string>
+    <string name="course_details_add_notes">Add a note</string>
+    <string name="course_details_add_assessment_notes">Add an assessment or note by clicking below.</string>
+
+    <!-- Add Notification -->
+    <string name="notification_start_date"> Add start notification </string>
+    <string name="notification_end_date"> Add start notification </string>
+    <string name="notification_set_start_date">Set start date</string>
+    <string name="notification_set_end_date">Set end date</string>
+    <string name="add_notification_title">Add Notifications</string>
+
+    <!--Search Note -->
+    <string name="search_notes_title"> Search for Notes</string>
+    <string name="search_notes_help">Search Notes Help</string>
+    <string name="search_notes_help_text">This screen will allow you to search for notes
+        via text and via course. </string>
+    <string name="search_note_select_course">Select Course</string>
+    <string name="search_note_clear_list">Reset Search</string>
+
+    <string-array name="search_array_name">
+        <item>Array Item One</item>
+        <item>Array Item Two</item>
+        <item>Array Item Three</item>
+    </string-array>
+
+
+    <!-- Search Assessments -->
+    <string name="search_assessment_title"> Search for Assessments</string>
+    <string name="search_assessments_help">Search Assessments Help</string>
+    <string name="search_assessments_help_text">This screen will allow you to search for assessments
+        via text and via course and date. </string>
+    <string name="search_assessment_select_course">Select Course</string>
+    <string name="search_assessment_select_week_or_month">Select Weekly or Monthly Report View</string>
+    <string name="search_assessment_weekly"> Weekly </string>
+    <string name="search_assessment_monthly"> Monthly </string>
+
+
+    <!-- Pop up menu Terms -->
+    <string name="delete_term_popup_menu"> Delete Term</string>
+    <string name="update_term_popup_menu"> Update Term</string>
+    <string name="details_term_popup_menu"> View Term Details</string>
+
+    <!-- Pop up menu Assessments -->
+    <string name="delete_assessment_popup_menu"> Delete Assessment</string>
+    <string name="update_Assessment_popup_menu"> Update Assessment</string>
+    <string name="details_assessment_popup_menu"> View Assessment Details</string>
+    <string name="add_assessment_notification">Add Assessment Notification</string>
+
+    <!-- Pop up menu Courses -->
+    <string name="delete_courses_popup_menu"> Delete Course</string>
+    <string name="update_courses_popup_menu"> Update Course</string>
+    <string name="details_courses_popup_menu"> View Course Details</string>
+    <string name="add_course_notification_popup_menu">Add Course Notification</string>
+    <string name="course_deleted"> Course deleted</string>
+
+    <!-- Popup menu Notes -->
+    <string name="details_notes_popup_menu"> View Note Details</string>
+    <string name="update_notes_popup_menu"> Update Note</string>
+    <string name="delete_notes_popup_menu"> Delete Note </string>
+    <string name="share_notes_popup_menu"> Share the note </string>
+
+    <!-- Scheduler Receiver -->
+    <string name="channel_name">notification channel</string>
+    <string name="channel_description">notification channel description</string>
+
+
+    <!-- Error Messages -->
+    <string name="notification_start_date_error_empty_field">
+        Field is empty. Please enter a valid start date.</string>
+    <string name="notification_end_date_error_empty_field">
+        Field is empty. Please enter a valid end date.</string>
+    <string name="date_format_error_empty_field">
+        Field is empty. Please enter a valid end date.</string>
+    <string name="term_title_error">You did not enter a term title.</string>
+    <string name="term_error_empty_field">
+        Field is empty. Please enter a term title.</string>
+    <string name="course_title_error">You did not enter a course title.</string>
+    <string name="course_error_empty_field">
+        Field is empty. Please enter a term title.</string>
+    <string name="assessment_title_error">
+        You did not enter an assessment title.</string>
+    <string name="assessment_error_empty_field">
+        Field is empty. Please enter a assessment title.</string>
+    <string name="note_title_error">You did not enter an note title.</string>
+    <string name="note_error_empty_field">The note title is empty.</string>
+
+    <string name="invalid_format_field">
+        Date is in an invalid format.  Please enter date in the following form: MM/DD/YY</string>
+    <string name="invalid_date_range"> The dates for the start and end date must fall within the
+        following values. Start Date: %1$s and  End Date: %2$s .</string>
+
+</resources>

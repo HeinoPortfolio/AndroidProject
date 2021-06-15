@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- Add
+    <item android:id="@+id/add_term_from_course"
+        android:title="@string/term_add"
+        android:icon="@drawable/ic_edit_calendar_24"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom" />
+    -->
+    <!-- Help -->
+    <item android:id="@+id/help_course_from_add"
+        android:title="@string/course_help"
+        android:icon="@drawable/ic_help_24"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom"/>
+
+</menu>
