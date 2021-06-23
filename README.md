@@ -2,7 +2,7 @@
 
 My Final Android Project
 ***
-<p>This README file is to for the Android application that was created during my senior capstone while in attendance at the university. </p>
+<p>This README file is to for the Android application that was created during my senior capstone while in attendance at the university. <b>Note:</b> The title pages for some documents have been removed.  This to maintain the integrity of the course in which they were taken. </p>
 
 1. ### User Guide - 
 * <b>To get a good feel for what the application does and what it looks like this is the best place to start</b>.
