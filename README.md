@@ -11,7 +11,7 @@ Android Studio| IDE that was used to create the application
 Gradle | build automation tool
 SQLite | relational database
 Room | a persistence library that provides an extra layer of abstraction over the SQLite database.
-XML | markup language that defines the layout for the interfaces used in tha application
+XML | markup language that defines the layout for the interfaces used in the application
 
 1. ### User Guide - 
 * <b>To get a good feel for what the application does and what it looks like this is the best place to start</b>.
