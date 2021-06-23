@@ -4,6 +4,15 @@ My Final Android Project
 ***
 <p>This README file is to for the Android application that was created during my senior capstone while in attendance at the university. <b>Note:</b> The title pages for some documents have been removed.  This to maintain the integrity of the course in which they were taken. </p>
 
+**Concept or Technology Used**|**Description**
+:-----:|:-----:
+Java| main language used in the creation of the application
+Android Studio| IDE that was used to create the application
+Gradle | build automation tool
+SQLite | relational database
+Room | a persistence library that provides an extra layer of abstraction over the SQLite database.
+XML | markup language that defines the layout for the interfaces used in tha application
+
 1. ### User Guide - 
 * <b>To get a good feel for what the application does and what it looks like this is the best place to start</b>.
 * This will contain a guide for the use of the application.  It is used to familiarize the user with the basic functionality of the application
