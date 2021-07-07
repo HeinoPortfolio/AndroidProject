@@ -28,4 +28,4 @@ XML | markup language that defines the layout for the interfaces used in the app
 5. ### Project Summary Part 2-  
 * Details the design of the application, has the design document, unit test plan, specifications, procedures and the results.
 
-**The main files for the application can be found in the following directory:** [MyProject](https://github.com/HeinoPortfolio/AndroidProject/tree/MyFinalProject)</p>
+**The main files for the application can be found in the following directory:** [MyFinalProject](https://github.com/HeinoPortfolio/AndroidProject/tree/MyFinalProject)</p>
