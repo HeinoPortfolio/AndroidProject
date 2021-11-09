@@ -6,6 +6,8 @@ This project's pupose was to build an application that would allow students to m
 ***
 <p>This README file is to for the Android application that was created during my senior capstone while in attendance at the university. <b>Note:</b> The title pages for some documents have been removed.  This to maintain the integrity of the course in which they were taken. </p>
 
+**The main files for the application can be found in the following directory:** [MyFinalProject](https://github.com/HeinoPortfolio/AndroidProject/tree/MyFinalProject)</p>
+
 **Concept or Technology Used**|**Description**
 :-----:|:-----:
 Java| main language used in the creation of the application
